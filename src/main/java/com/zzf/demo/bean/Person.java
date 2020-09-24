@@ -45,7 +45,6 @@ public class Person {
         this.dog = dog;
     }
 
-
     @Override
     public String toString() {
         return "Person{" +
