@@ -1,0 +1,7 @@
+person:
+  age: 18
+  name: personName
+  map: {key1: one, k2: 222}
+  dog:
+    name: dogName
+
