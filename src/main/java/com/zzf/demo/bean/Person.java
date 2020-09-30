@@ -1,20 +1,34 @@
 package com.zzf.demo.bean;
 
+import org.hibernate.validator.constraints.Email;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.Map;
 
 @Component
-//@ConfigurationProperties(prefix = "person")
+@ConfigurationProperties(prefix = "person")
+@Validated
 public class Person {
-    @Value("${person.name}")
+//    @Value("${person.name}")
     private String name;
-    @Value("#{2*11}")
+//    @Value("#{2*11}")
     private Integer age;
+    @Email
+    private String email;
     private Map<Object, Object> map;
     private Dog dog;
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public String getName() {
         return name;
@@ -53,6 +67,7 @@ public class Person {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", email='" + email + '\'' +
                 ", map=" + map +
                 ", dog=" + dog +
                 '}';
