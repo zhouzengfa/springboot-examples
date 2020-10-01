@@ -1,3 +1,24 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: prod #选用的环境
+
+---
+#指定开发环境配置
+server:
+  port: 8081
+spring:
+  profiles: dev
+
+---
+#指定发布环境配置
+server:
+  port: 8082
+spring:
+  profiles: prod
+
+---
 person:
   age: ${random.int}
   name: 张三${random.uuid}
