@@ -4,6 +4,16 @@ spring:
   profiles:
     active: dev #选用的环境
 
+#日志
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+    level: debug
+  file:
+    name: log.log
+    path: /log
+
 ---
 #指定开发环境配置
 server:
