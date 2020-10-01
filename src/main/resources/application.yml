@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   profiles:
-    active: prod #选用的环境
+    active: dev #选用的环境
 
 ---
 #指定开发环境配置
