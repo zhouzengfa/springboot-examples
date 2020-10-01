@@ -1,8 +1,8 @@
 server:
-  port: 8080
+  port: 80
 spring:
   profiles:
-    active: dev #选用的环境
+    active: none #选用的环境
 
 #日志
 logging:
