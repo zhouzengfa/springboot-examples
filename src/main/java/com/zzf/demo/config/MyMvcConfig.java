@@ -1,7 +1,9 @@
 package com.zzf.demo.config;
 
+import com.zzf.demo.components.MyLocaleResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -28,5 +30,11 @@ public class MyMvcConfig implements WebMvcConfigurer {
         };
 
         return config;
+    }
+
+    // 设置自己的LocaleResoler
+    @Bean
+    public LocaleResolver localeResolver() {
+       return  new MyLocaleResolver();
     }
 }
