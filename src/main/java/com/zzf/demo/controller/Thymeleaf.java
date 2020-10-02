@@ -16,4 +16,10 @@ public class Thymeleaf {
         map.put("users", Arrays.asList("zhangshan", "lishi", "wangwu"));
         return "success";
     }
+
+    // 改变首页的第一种方式
+//    @RequestMapping({"/", "/index.html"})
+//    public String index(){
+//        return "login";
+//    }
 }
