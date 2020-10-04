@@ -24,8 +24,11 @@ public class MyMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         // 使用定制的拦截器
-        registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").
-                excludePathPatterns("/", "/index.html", "/user/login");
+        registry.addInterceptor(new MyInterceptor())
+                .addPathPatterns("/**")
+                .excludePathPatterns("/", "/index.html", "/user/login")
+                .excludePathPatterns("/asserts/**")
+                .excludePathPatterns("/webjars/**");
     }
 
     // 改变首页的第二种方式
