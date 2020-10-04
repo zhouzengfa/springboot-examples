@@ -16,7 +16,8 @@ public class LoginController {
     {
         if (!StringUtils.isEmpty(username) && password.equals("123456"))
         {
-            return "dashboard";
+            // 防止重复提交，使用重定向
+            return "redirect:/main.html";
         }
         else
         {
