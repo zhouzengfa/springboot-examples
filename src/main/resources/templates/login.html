@@ -8,15 +8,16 @@
 		<title>Signin Template for Bootstrap</title>
 		<!-- Bootstrap core CSS -->
 <!--		<link href="asserts/css/bootstrap.min.css" rel="stylesheet">-->
-		<link th:href="@{webjars/bootstrap/4.5.0/css/bootstrap.css}" rel="stylesheet">
+		<link th:href="@{/webjars/bootstrap/4.5.0/css/bootstrap.css}" rel="stylesheet">
 		<!-- Custom styles for this template -->
-		<link href="asserts/css/signin.css" rel="stylesheet">
+		<link href="/asserts/css/signin.css" rel="stylesheet">
 	</head>
 
 	<body class="text-center">
 		<form class="form-signin" th:action="@{/user/login}"  method="post">
-			<img class="mb-4" src="asserts/img/bootstrap-solid.svg" alt="" width="72" height="72">
+			<img class="mb-4" src="/asserts/img/bootstrap-solid.svg" alt="" width="72" height="72">
 			<h1 class="h3 mb-3 font-weight-normal" th:text="#{login.tip}"></h1>
+			<p th:text="${error}" style="color:red" th:if="${not #strings.isEmpty(error)}"></p>
 			<label class="sr-only" th:text="#{login.name}">Username</label>
 			<input type="text" name="username" class="form-control" th:placeholder="#{login.name}" required="" autofocus="">
 			<label class="sr-only">[[#{login.password}]]</label>
