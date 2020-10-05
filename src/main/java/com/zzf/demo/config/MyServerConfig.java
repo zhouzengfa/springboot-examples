@@ -1,8 +1,10 @@
 package com.zzf.demo.config;
 
 import com.zzf.demo.filter.MyFilter;
+import com.zzf.demo.listener.MyListener;
 import com.zzf.demo.servlet.MyServlet;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
@@ -24,5 +26,11 @@ public class MyServerConfig {
         filterRegistrationBean.setUrlPatterns(Arrays.asList("/", "/MyServlet"));
 
         return filterRegistrationBean;
+    }
+
+    @Bean
+    public ServletListenerRegistrationBean listenerRegistrationBean() {
+        ServletListenerRegistrationBean<MyListener> myListenerServletListenerRegistrationBean = new ServletListenerRegistrationBean<>(new MyListener());
+        return myListenerServletListenerRegistrationBean;
     }
 }
