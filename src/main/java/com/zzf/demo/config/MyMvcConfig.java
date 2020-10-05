@@ -25,7 +25,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         // 使用定制的拦截器
         registry.addInterceptor(new MyInterceptor())
-                .addPathPatterns("/**")
+//                .addPathPatterns("/**")
                 .excludePathPatterns("/", "/index.html", "/user/login")
                 .excludePathPatterns("/asserts/**")
                 .excludePathPatterns("/webjars/**");
