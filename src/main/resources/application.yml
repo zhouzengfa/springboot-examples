@@ -3,6 +3,9 @@ server:
 spring:
   profiles:
     active: none #选用的环境
+  datasource:
+    schema:
+      - classpath:/sql/department.sql
 
 #日志
 logging:
