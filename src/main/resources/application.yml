@@ -3,9 +3,11 @@ server:
 spring:
   profiles:
     active: none #选用的环境
-  datasource:
-    schema:
-      - classpath:/sql/department.sql
+  jpa:
+    hibernate:
+      ddl-auto: update #更新或创建数据表
+    show-sql: true #显示Sql语句
+
 
 #MyBatis
 mybatis:
