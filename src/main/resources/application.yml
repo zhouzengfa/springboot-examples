@@ -7,6 +7,11 @@ spring:
     schema:
       - classpath:/sql/department.sql
 
+#MyBatis
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
 #日志
 logging:
   pattern:
@@ -16,7 +21,6 @@ logging:
   file:
     name: log.log
     path: /log
-
 ---
 #指定开发环境配置
 server:

@@ -4,6 +4,7 @@ import com.zzf.demo.dao.DepartmentDao;
 import com.zzf.demo.dao.EmployeeDao;
 import com.zzf.demo.entities.Department;
 import com.zzf.demo.entities.Employee;
+import com.zzf.demo.mapper.EmployeeMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import java.util.Collection;
 
 @Controller
@@ -72,5 +74,25 @@ public class EmployeeController {
     public String deleteEmp(@PathVariable("id") Integer id){
         employeeDao.delete(id);
         return "redirect:/emps";
+    }
+
+    @Resource
+    EmployeeMapper employeeMapper;
+
+    // for mybatis test
+    //获得员工信息
+    @ResponseBody
+    @GetMapping("/employee/{id}")
+    public Employee getEmployeeById(@PathVariable("id") Integer id){
+        return employeeMapper.getEmpById(id);
+    }
+
+    // for mybatis test
+    // 添加员工
+    @ResponseBody
+    @GetMapping("/employee")
+    public Employee addEmployee(Employee employee){
+        employeeMapper.addEmp(employee);
+        return employee;
     }
 }
