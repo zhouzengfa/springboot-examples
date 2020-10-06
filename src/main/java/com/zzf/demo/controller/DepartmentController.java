@@ -1,8 +1,7 @@
 package com.zzf.demo.controller;
 
-import com.zzf.demo.DepartmentMapper;
+import com.zzf.demo.mapper.DepartmentMapper;
 import com.zzf.demo.entities.Department;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

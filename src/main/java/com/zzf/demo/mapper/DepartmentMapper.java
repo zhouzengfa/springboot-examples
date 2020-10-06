@@ -1,10 +1,10 @@
-package com.zzf.demo;
+package com.zzf.demo.mapper;
 
 import com.zzf.demo.entities.Department;
 import org.apache.ibatis.annotations.*;
 
 // 指定一个操作数据库的Mapper
-@Mapper
+//@Mapper
 public interface DepartmentMapper {
 
     @Select("select * from department where id=#{id}")
