@@ -8,5 +8,12 @@
     <artifactId>com-demo-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    
+    <dependencies>
+        <dependency>
+            <groupId>com.demo.autoconfig</groupId>
+            <artifactId>com-demo-autoconfig</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 </project>
