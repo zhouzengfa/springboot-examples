@@ -12,7 +12,7 @@ public class TestService {
         this.config = config;
     }
 
-    String getFullName(String name)
+    public String getFullName(String name)
     {
         return config.prefix+"-"+name+"-" + config.suffix;
     }
