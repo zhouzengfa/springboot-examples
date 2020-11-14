@@ -1,0 +1,26 @@
+2020-11-14 09:55:50.376 [main] INFO  com.zzf.demo.DemoApplication - Starting DemoApplication on DESKTOP-9N5MFPT with PID 9788 (D:\source\my-git\springboot-examples\target\classes started by dell in D:\source\my-git\springboot-examples)
+2020-11-14 09:55:50.378 [main] INFO  com.zzf.demo.DemoApplication - The following profiles are active: none
+2020-11-14 09:55:50.772 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-14 09:55:50.811 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34ms. Found 1 JPA repository interfaces.
+2020-11-14 09:55:51.094 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2020-11-14 09:55:51.099 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-14 09:55:51.099 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-11-14 09:55:51.185 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-14 09:55:51.186 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 776 ms
+2020-11-14 09:55:51.365 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-11-14 09:55:51.393 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-14 09:55:51.415 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-14 09:55:51.472 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-11-14 09:55:51.551 [task-1] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-14 09:55:51.629 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-11-14 09:55:51.719 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-14 09:55:51.821 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2020-11-14 09:55:51.929 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2020-11-14 09:55:51.930 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2020-11-14 09:55:51.997 [task-1] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-14 09:55:52.002 [task-1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-14 09:55:52.093 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2020-11-14 09:55:52.098 [main] INFO  com.zzf.demo.DemoApplication - Started DemoApplication in 2.197 seconds (JVM running for 3.107)
+2020-11-14 09:57:50.568 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-14 09:57:50.568 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-14 09:57:50.573 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
